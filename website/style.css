@@ -1,0 +1,80 @@
+*{ box-sizing: border-box; }
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 23px;
+    color: #fff;
+}
+
+.container {
+    max-width: 400px;
+    max-height: 100vh;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    background: #141414;
+    border-radius: 30px;
+    color: teal;
+    text-align: center;
+}
+
+.title {
+    color:#26baa4;
+    font-weight: 700;
+}
+
+.zip,
+.feel{
+    margin-bottom: 10px;
+}
+
+.det_1,
+.det_2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.weather_desc {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    margin-top: 15px;
+    color: #fff;
+    background: #26baa4;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 18px;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+button:hover {
+    background: #008080;
+}
+#icon img{
+    border-radius: 50%;
+    width: 60%;
+}
+.animate {
+    color: #000 ;
+    animation: feels 6s infinite linear;
+    transition: all 0.5s;
+}
+@keyframes feels{
+    0%{
+        letter-spacing: 5px;
+    }
+    50%{
+        letter-spacing: 10px;
+    }
+    100%{
+        letter-spacing: 5px;
+    }
+}
+
